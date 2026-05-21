@@ -796,7 +796,7 @@ export default function App() {
                         Station coordinates
                       </span>
                       <span className="text-xs text-zinc-400 mt-1 block leading-relaxed font-light">
-                        Marble Auto World, opposite Mamta Enterprises, Auto Market Area, India.
+                        Marble Auto World, opposite Mamta Enterprises, Siddharth Nagar, Jagatpura, Jaipur, Rajasthan, India.
                       </span>
                     </div>
                   </div>
@@ -842,15 +842,15 @@ export default function App() {
 
               <iframe
                 title="Marble Auto World Coordinates Map"
-                className="w-full h-[350px] md:h-[450px] lg:h-full border-0 grayscale invert pointer-events-auto"
+                className="w-full h-[350px] md:h-[450px] lg:h-[450px] border-0 grayscale invert pointer-events-auto"
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.12937989505!2d75.03478987625126!3d30.2048995748439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3913cf672f0db381%3A0x6d90df8ad2dbfb30!2sMarble%20Auto%20World%20by%20Mamta%20Enterprises!5e0!3m2!1sen!2sin!4v1716212349000!5m2!1sen!2sin"
+                src="https://maps.google.com/maps?q=26.811104567709013,75.88653791030661&z=17&output=embed"
               />
 
               <a
-                href="https://maps.google.com/?q=Marble+Auto+World+by+Mamta+Enterprises"
+                href="https://www.google.com/maps/place/26%C2%B048'40.0%22N+75%C2%B053'11.5%22E/@26.8111046,75.8865379,17z/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="absolute bottom-4 right-4 bg-black border border-white/10 px-4 py-2 text-[9px] font-mono uppercase tracking-widest text-amber-500 hover:text-white transition-colors flex items-center gap-1.5"
