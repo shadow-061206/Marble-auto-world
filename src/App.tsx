@@ -30,6 +30,7 @@ import BeforeAfter from './components/BeforeAfter';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 import IconResolver from './components/IconResolver';
 import { FloatingPaths } from './components/ui/background-paths';
+import heroSectionImg from './assets/images/hero section image.webp';
 
 export default function App() {
   const [bookingOpen, setBookingOpen] = useState(false);
@@ -59,9 +60,6 @@ export default function App() {
 
       {/* Premium Cinematic Loader */}
       <Loader />
-
-      {/* Luxury Brand Custom Mouse Hover Follower */}
-      <CustomCursor />
 
       {/* Persistent Sticky Navigation */}
       <Navbar onOpenBooking={() => handleOpenBooking('')} />
@@ -99,36 +97,51 @@ export default function App() {
                 MARBLE AUTOMOTIVE SANCTUARY
               </div>
 
-              {/* Outstanding Editorial Titles */}
+              {/* Outstanding Brand Title */}
               <div className="space-y-4">
-                <span className="block text-xs font-mono tracking-[0.35em] text-zinc-500 uppercase">
-                  MAMTA ENTERPRISES
+                <span className="text-[10px] font-mono font-bold uppercase tracking-[0.35em] text-amber-500 block">
+                  MASTERBRAND DEFINITION
                 </span>
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-light leading-[1.05] tracking-tight text-white uppercase">
-                  WHAT IS <br />
-                  <span className="font-serif italic font-light text-amber-500 block mt-2 text-3xl sm:text-5xl md:text-6xl lg:text-7xl lowercase">
-                    marble?
+                  MARBLE AUTO WORLD <br />
+                  <span className="font-serif italic font-light text-amber-500 block mt-2 text-2xl sm:text-4xl md:text-5xl lg:text-6xl lowercase">
+                    by Mamta Enterprises
                   </span>
                 </h1>
               </div>
 
-              {/* Core Concept Statement */}
-              <p className="text-sm md:text-base text-zinc-300 max-w-xl leading-relaxed font-light">
-                Marble is the ultimate destination where passion, precision, and community converge. More than storage or maintenance, it’s a sanctuary for extraordinary cars and the enthusiasts who drive them.
-              </p>
-
-              {/* Vision Quote Grid */}
-              <div className="border-t border-b border-zinc-800 py-6 my-4 space-y-4">
-                <span className="text-[10px] font-mono tracking-[0.3em] text-amber-500 block uppercase">
-                  OUR VISION
-                </span>
-                <p className="font-serif italic text-lg text-zinc-300 leading-relaxed font-light">
-                  "To create a place for extraordinary cars and the people who love them. An ecosystem where world-class care meets precision craftsmanship, and where a shared passion for the drive transforms into lasting connection."
+              {/* Brand Description Statement */}
+              <div className="space-y-4 text-xs md:text-sm text-zinc-350 font-light leading-relaxed max-w-xl">
+                <p>
+                  Established as the premium complete car care center, 
+                  <strong> Marble Auto World</strong> has become synonymous with mechanical authority and luxury automotive detailing. 
+                  Operated with standard procedures and utilizing state-of-the-art diagnostic frameworks, 
+                  we cater to detailing enthusiasts, offroad collectors, and daily commuter vehicles alike.
+                </p>
+                <p>
+                  Our fully pressurized dust-free climate booths ensure absolute precision for Paint Protection Film (PPF) 
+                  and 9H nano liquid applications. Backed by Mamta Enterprises licensing, we support end-to-end motor 
+                  insurance accident claim management, guaranteeing zero friction for our patrons.
                 </p>
               </div>
 
+              {/* Symmetrical Mini Parameters Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-zinc-900 max-w-xl">
+                {[
+                  'Pressurized climate PPF chambers',
+                  'Computerized laser paint matchers',
+                  'Accredited detailing master crew',
+                  'Cashless insurance claims coordinators'
+                ].map((item, idx) => (
+                  <div key={idx} className="flex items-center gap-2 text-[11px] text-zinc-300">
+                    <ShieldCheck className="w-4 h-4 text-amber-500 shrink-0" />
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
+
               {/* Metrics */}
-              <div className="grid grid-cols-3 gap-6 pt-2 max-w-lg">
+              <div className="grid grid-cols-3 gap-6 pt-6 border-t border-zinc-900 max-w-lg">
                 <div>
                   <span className="block text-xl md:text-2xl font-mono font-bold text-white leading-none">5K+</span>
                   <span className="text-[9px] font-mono uppercase tracking-[0.2em] text-zinc-500 mt-2 block">Specimens</span>
@@ -147,7 +160,7 @@ export default function App() {
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
                 <button
                   onClick={() => handleOpenBooking('')}
-                  className="px-8 py-3.5 bg-white hover:bg-amber-500 text-black font-mono font-bold text-[10px] tracking-[0.2em] uppercase transition-all duration-350 cursor-pointer text-center"
+                  className="px-8 py-3.5 bg-white hover:bg-amber-500 text-black font-mono font-bold text-[10px] tracking-[0.2em] uppercase transition-all duration-350 cursor-pointer text-center font-bold"
                 >
                   Book Event care
                 </button>
@@ -176,7 +189,7 @@ export default function App() {
 
                 <div className="flex-1 w-full h-full relative overflow-hidden bg-black">
                   <img
-                    src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=1200&auto=format&fit=crop"
+                    src={heroSectionImg}
                     alt="Premium Detailed Vehicle Showcase"
                     className="w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-105 filter grayscale hover:grayscale-0"
                   />
@@ -225,6 +238,52 @@ export default function App() {
         </div>
       </section>
 
+      {/* Why Choose Us Section - Pure Grid layout */}
+      <section id="why-us" className="py-28 bg-[#050505] relative z-10 border-b border-zinc-900">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
+          
+          {/* Section Header */}
+          <div className="max-w-3xl mb-20 space-y-4">
+            <span className="text-[10px] font-mono font-bold uppercase tracking-[0.35em] text-amber-500 block">
+              PRISTINE OPERATION STANDARDS
+            </span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-light text-white tracking-tight uppercase leading-none">
+              WHY CHOOSE <span className="font-serif italic font-light text-amber-500">Marble</span>
+            </h2>
+            <div className="w-12 h-[1px] bg-amber-500 mt-4" />
+            <p className="text-xs md:text-sm text-zinc-400 leading-relaxed font-light max-w-xl">
+              We never cut corners. Our facilities, products, claims networks, and expert mechanics ensure your automotive investment remains flawlessly shielded.
+            </p>
+          </div>
+
+          {/* Symmetrical Grid List for Why Choose Us */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6 bg-transparent">
+            {WHY_CHOOSE_US.map((item, idx) => (
+              <div
+                key={idx}
+                className="bg-black hover:bg-zinc-980 border border-white/10 hover:border-amber-500/30 p-6 transition-all duration-300 flex flex-col justify-between"
+              >
+                <div className="space-y-4">
+                  <div className="w-10 h-10 border border-white/10 flex items-center justify-center text-amber-500 bg-zinc-900">
+                    <IconResolver name={item.icon} className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-sm font-mono font-bold text-white uppercase leading-tight">
+                    {item.title}
+                  </h3>
+                  <p className="text-[11px] text-zinc-400 leading-relaxed font-light font-sans">
+                    {item.description}
+                  </p>
+                </div>
+                <div className="pt-4 text-[9px] font-mono text-zinc-500 uppercase tracking-widest border-t border-zinc-900 mt-6 pointer-events-none">
+                  STATION PILLAR {idx + 1}
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
       {/* Services Section - The Care Portfolio */}
       <section id="services" className="py-28 bg-[#050505] relative z-10">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
@@ -243,60 +302,7 @@ export default function App() {
             </p>
           </div>
 
-          {/* SUV Custom Defensive Stage Banner */}
-          <div className="mb-24">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 border border-white/10 bg-black relative">
-              
-              {/* Left text column */}
-              <div className="lg:col-span-5 p-8 md:p-12 flex flex-col justify-between space-y-8">
-                <div className="space-y-6">
-                  <div className="inline-flex items-center gap-1.5 border border-amber-500/20 px-2.5 py-1 text-amber-500 text-[9px] font-mono uppercase tracking-widest bg-amber-500/5">
-                    <Wrench className="w-3.5 h-3.5" /> SPECIALIST SUV CALIBRATION
-                  </div>
-                  <h3 className="text-2xl md:text-3xl font-display font-light text-white uppercase leading-tight">
-                    THE SUV <span className="font-serif italic text-amber-500 lowercase">defense</span> MATRIX
-                  </h3>
-                  <p className="text-xs text-zinc-400 leading-relaxed font-light">
-                    Our service bays feature specific alignment calibration profiles for premium offroad and luxury SUVs. Review our master specimen which has been fitted with complete high-gloss self-healing Defensive PPF coating.
-                  </p>
 
-                  <div className="grid grid-cols-2 gap-4 pt-4 border-t border-zinc-900">
-                    <div className="space-y-1">
-                      <span className="text-[9px] font-mono text-zinc-500 uppercase block">Engine Cal</span>
-                      <span className="text-xs font-bold text-zinc-300 font-mono">Full mStallion Tuning</span>
-                    </div>
-                    <div className="space-y-1">
-                      <span className="text-[9px] font-mono text-zinc-500 uppercase block">PPF wrapping</span>
-                      <span className="text-xs font-bold text-zinc-300 font-mono">Self-Healing Armour</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="pt-4">
-                  <button
-                    onClick={() => handleOpenBooking('Premium SUV Detailing Bundle')}
-                    className="px-6 py-3 bg-white text-black hover:bg-amber-500 hover:text-black font-mono font-bold text-[10px] tracking-[0.2em] uppercase transition-all duration-300 cursor-pointer"
-                  >
-                    CONFIG SUV SUITE
-                  </button>
-                </div>
-              </div>
-
-              {/* Right image display */}
-              <div className="lg:col-span-7 h-[300px] md:h-[400px] lg:h-auto min-h-[350px] relative overflow-hidden bg-zinc-900 border-l border-white/10">
-                <img
-                  src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=1200&auto=format&fit=crop"
-                  alt="Premium SUV Offroad Showcase"
-                  className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-[1000ms]"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80" />
-                <div className="absolute top-4 right-4 bg-black border border-white/10 text-white font-mono text-[9px] tracking-widest py-1 px-3">
-                  DEFENSIVE MATTE SHIELD
-                </div>
-              </div>
-
-            </div>
-          </div>
 
           {/* Service Categories Selector Tab Panel */}
           <div className="flex flex-wrap items-center justify-start gap-3 mb-12">
@@ -321,11 +327,11 @@ export default function App() {
           </div>
 
           {/* Grid of Interactive Services - Flat luxury grid layout with 1px borders */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 -gap-[1px] bg-white/[0.08] border border-white/10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 bg-transparent">
             {filteredServices.map((service) => (
               <div
                 key={service.id}
-                className="bg-black hover:bg-zinc-980 border border-white/5 hover:border-amber-500/30 p-8 transition-all duration-300 flex flex-col justify-between"
+                className="bg-black hover:bg-zinc-980 border border-white/10 hover:border-amber-500/30 p-8 transition-all duration-300 flex flex-col justify-between"
               >
                 <div className="space-y-6">
                   {/* Icon & Title Row */}
@@ -376,49 +382,52 @@ export default function App() {
         </div>
       </section>
 
-      {/* About Us Section - The Sanctuary Story */}
+      {/* About Us Section - The Sanctuary Story (re-contextualized to WHAT IS MARBLE story) */}
       <section id="about" className="py-28 bg-black relative z-10 border-t border-zinc-900">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             {/* Left Narrative Column */}
             <div className="lg:col-span-6 space-y-8">
-              <span className="text-[10px] font-mono font-bold uppercase tracking-[0.35em] text-amber-500 block">
-                MASTERBRAND DEFINITION
+              <span className="block text-xs font-mono tracking-[0.35em] text-zinc-500 uppercase">
+                MAMTA ENTERPRISES
               </span>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-light text-white uppercase tracking-tight leading-none">
-                MARBLE AUTO WORLD <br />
-                <span className="font-serif italic font-light text-amber-500 text-2xl lowercase mt-2 block">by Mamta Enterprises</span>
+                WHAT IS <br />
+                <span className="font-serif italic font-light text-amber-500 text-3xl sm:text-4xl mt-2 block lowercase">
+                  marble?
+                </span>
               </h2>
               <div className="w-12 h-[1px] bg-amber-500" />
               
-              <div className="space-y-4 text-xs md:text-sm text-zinc-400 font-light leading-relaxed">
-                <p>
-                  Established as the premium complete car care center, 
-                  <strong> Marble Auto World</strong> has become synonymous with mechanical authority and luxury automotive detailing. 
-                  Operated with standard procedures and utilizing state-of-the-art diagnostic frameworks, 
-                  we cater to detailing enthusiasts, offroad collectors, and daily commuter vehicles alike.
-                </p>
-                <p>
-                  Our fully pressurized dust-free climate booths ensure absolute precision for Paint Protection Film (PPF) 
-                  and 9H nano liquid applications. Backed by Mamta Enterprises licensing, we support end-to-end motor 
-                  insurance accident claim management, guaranteeing zero friction for our patrons.
+              <p className="text-xs md:text-sm text-zinc-400 font-light leading-relaxed">
+                Marble is the ultimate destination where passion, precision, and community converge. More than storage or maintenance, it’s a sanctuary for extraordinary cars and the enthusiasts who drive them.
+              </p>
+
+              {/* Vision Quote Grid */}
+              <div className="border-t border-b border-zinc-800 py-6 my-4 space-y-4">
+                <span className="text-[10px] font-mono tracking-[0.3em] text-amber-500 block uppercase">
+                  OUR VISION
+                </span>
+                <p className="font-serif italic text-base text-zinc-300 leading-relaxed font-light">
+                  "To create a place for extraordinary cars and the people who love them. An ecosystem where world-class care meets precision craftsmanship, and where a shared passion for the drive transforms into lasting connection."
                 </p>
               </div>
 
-              {/* Checks parameters grids */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-zinc-900">
-                {[
-                  'Pressurized climate PPF chambers',
-                  'Computerized laser paint matchers',
-                  'Accredited detailing master crew',
-                  'Cashless insurance claims coordinators'
-                ].map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-2 text-[11px] text-zinc-300">
-                    <ShieldCheck className="w-4 h-4 text-amber-500 shrink-0" />
-                    <span>{item}</span>
-                  </div>
-                ))}
+              {/* Metrics */}
+              <div className="grid grid-cols-3 gap-6 pt-2 max-w-lg">
+                <div>
+                  <span className="block text-lg md:text-xl font-mono font-bold text-white leading-none">5K+</span>
+                  <span className="text-[9px] font-mono uppercase tracking-[0.2em] text-zinc-500 mt-2 block">Specimens</span>
+                </div>
+                <div className="border-l border-zinc-800 pl-6">
+                  <span className="block text-lg md:text-xl font-mono font-bold text-amber-500 leading-none">9H+</span>
+                  <span className="text-[9px] font-mono uppercase tracking-[0.2em] text-zinc-500 mt-2 block">Hardness Shield</span>
+                </div>
+                <div className="border-l border-zinc-800 pl-6">
+                  <span className="block text-lg md:text-xl font-mono font-bold text-white leading-none">100%</span>
+                  <span className="text-[9px] font-mono uppercase tracking-[0.2em] text-zinc-500 mt-2 block">Pristine State</span>
+                </div>
               </div>
             </div>
 
@@ -441,52 +450,6 @@ export default function App() {
             </div>
 
           </div>
-        </div>
-      </section>
-
-      {/* Why Choose Us Section - Pure Grid layout */}
-      <section id="why-us" className="py-28 bg-[#050505] relative z-10">
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
-          
-          {/* Section Header */}
-          <div className="max-w-3xl mb-20 space-y-4">
-            <span className="text-[10px] font-mono font-bold uppercase tracking-[0.35em] text-amber-500 block">
-              PRISTINE OPERATION STANDARDS
-            </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-light text-white tracking-tight uppercase leading-none">
-              WHY CHOOSE <span className="font-serif italic font-light text-amber-500">Marble</span>
-            </h2>
-            <div className="w-12 h-[1px] bg-amber-500 mt-4" />
-            <p className="text-xs md:text-sm text-zinc-400 leading-relaxed font-light max-w-xl">
-              We never cut corners. Our facilities, products, claims networks, and expert mechanics ensure your automotive investment remains flawlessly shielded.
-            </p>
-          </div>
-
-          {/* Symmetrical Grid List for Why Choose Us */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 -gap-[1px] bg-white/[0.08] border border-white/10">
-            {WHY_CHOOSE_US.map((item, idx) => (
-              <div
-                key={idx}
-                className="bg-black hover:bg-zinc-980 border border-white/5 p-6 transition-all duration-300 flex flex-col justify-between"
-              >
-                <div className="space-y-4">
-                  <div className="w-10 h-10 border border-white/10 flex items-center justify-center text-amber-500 bg-zinc-900">
-                    <IconResolver name={item.icon} className="w-5 h-5" />
-                  </div>
-                  <h3 className="text-sm font-mono font-bold text-white uppercase leading-tight">
-                    {item.title}
-                  </h3>
-                  <p className="text-[11px] text-zinc-400 leading-relaxed font-light font-sans">
-                    {item.description}
-                  </p>
-                </div>
-                <div className="pt-4 text-[9px] font-mono text-zinc-500 uppercase tracking-widest border-t border-zinc-900 mt-6 pointer-events-none">
-                  STATION PILLAR {idx + 1}
-                </div>
-              </div>
-            ))}
-          </div>
-
         </div>
       </section>
 
@@ -559,11 +522,11 @@ export default function App() {
           </div>
 
           {/* Testimonial Cards Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 -gap-[1px] bg-white/[0.08] border border-white/10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 bg-transparent">
             {TESTIMONIALS.map((t) => (
               <div
                 key={t.id}
-                className="bg-black border border-white/5 p-8 transition-all duration-350 flex flex-col justify-between"
+                className="bg-black hover:bg-zinc-980 border border-white/10 hover:border-amber-500/30 p-8 transition-all duration-300 flex flex-col justify-between"
               >
                 <div className="space-y-6">
                   <div className="flex items-center justify-between">
