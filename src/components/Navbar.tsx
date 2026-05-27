@@ -34,7 +34,6 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
   const navLinks = [
     { title: 'Home', id: 'home' },
     { title: 'Services', id: 'services' },
-    { title: 'About Us', id: 'about' },
     { title: 'Why Choose Us', id: 'why-us' },
     { title: 'Before/After', id: 'before-after' },
     { title: 'Testimonials', id: 'testimonials' },
@@ -45,7 +44,7 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
     <header
       className={`fixed top-0 left-0 right-0 z-[1000] border-b transition-all duration-500 ${
         scrolled
-          ? 'bg-black/95 backdrop-blur-md border-white/10 py-4 shadow-[0_10px_30px_rgba(0,0,0,0.8)]'
+          ? 'bg-[#FCFBFB]/95 backdrop-blur-md border-[#93BAD9]/30 py-4 shadow-[0_10px_30px_rgba(35,137,218,0.06)]'
           : 'bg-transparent border-transparent py-6 md:py-8'
       }`}
     >
@@ -54,13 +53,18 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
           {/* Brand Logo & Name */}
           <div
             onClick={() => scrollToSection('home')}
-            className="flex flex-col items-start gap-1 cursor-pointer select-none group"
+            className="flex flex-col items-start cursor-pointer select-none group"
           >
-            <span className="text-xl font-display font-medium text-white tracking-[0.15em] uppercase transition-colors group-hover:text-amber-500">
-              MARBLE AUTO WORLD
-            </span>
-            <span className="text-[9px] font-mono text-gray-400 uppercase tracking-[0.35em] leading-none">
-              MAMTA ENTERPRISES
+            <div className="flex items-baseline gap-1.5 leading-none">
+              <span className="text-sm font-black text-zinc-900 uppercase tracking-tight transition-colors group-hover:text-[#2389DA]">
+                AUTO
+              </span>
+              <span className="text-zinc-500 font-sans text-[8px] font-medium tracking-wide">
+                By Mamta Enterprises
+              </span>
+            </div>
+            <span className="text-lg font-black text-[#9FC8DD] uppercase tracking-tight leading-none">
+              WORLD
             </span>
           </div>
 
@@ -70,7 +74,7 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="text-[10px] font-mono font-medium uppercase tracking-[0.25em] text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer relative py-1 after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-amber-500 after:transition-all after:duration-300"
+                className="text-[10px] font-mono font-semibold uppercase tracking-[0.25em] text-zinc-600 hover:text-[#2389DA] transition-colors duration-300 cursor-pointer relative py-1 after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-[#2389DA] after:transition-all after:duration-300"
               >
                 {link.title}
               </button>
@@ -81,7 +85,7 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
           <div className="hidden lg:flex items-center gap-4">
             <button
               onClick={onOpenBooking}
-              className="px-6 py-2.5 bg-white text-black hover:bg-amber-500 hover:text-black font-mono font-bold text-[10px] tracking-[0.2em] uppercase transition-all duration-500 cursor-pointer active:scale-95"
+              className="px-6 py-2.5 bg-[#2389DA] text-white hover:bg-[#9FC8DD] hover:text-black font-mono font-bold text-[10px] tracking-[0.2em] uppercase transition-all duration-500 cursor-pointer active:scale-95"
             >
               BOOK EVENT Care
             </button>
@@ -91,13 +95,13 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
           <div className="flex lg:hidden items-center gap-4">
             <button
               onClick={onOpenBooking}
-              className="sm:hidden px-4 py-2 bg-white text-black hover:bg-amber-500 font-mono font-bold text-[10px] tracking-[0.15em] uppercase cursor-pointer"
+              className="sm:hidden px-4 py-2 bg-[#2389DA] text-white hover:bg-[#9FC8DD] hover:text-black font-mono font-bold text-[10px] tracking-[0.15em] uppercase cursor-pointer"
             >
               BOOK
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-400 hover:text-white bg-white/5 p-2 rounded-none border border-white/10 transition-colors duration-200 cursor-pointer"
+              className="text-zinc-600 hover:text-[#2389DA] bg-zinc-100 p-2 rounded-none border border-zinc-200 transition-colors duration-200 cursor-pointer"
               aria-label="Toggle Navigation Menu"
             >
               {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -108,7 +112,7 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
 
       {/* Mobile Menu Container */}
       <div
-        className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out bg-black border-b border-white/10 ${
+        className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out bg-[#FCFBFB] border-b border-[#93BAD9]/30 ${
           isOpen ? 'max-h-[460px] opacity-100 py-6' : 'max-h-0 opacity-0 pointer-events-none'
         }`}
       >
@@ -117,7 +121,7 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
             <button
               key={link.id}
               onClick={() => scrollToSection(link.id)}
-              className="block w-full text-left text-[10px] font-mono font-medium uppercase tracking-[0.25em] text-gray-400 hover:text-white py-2.5 border-b border-white/5 cursor-pointer"
+              className="block w-full text-left text-[10px] font-mono font-semibold uppercase tracking-[0.25em] text-zinc-600 hover:text-[#2389DA] py-2.5 border-b border-zinc-100 cursor-pointer"
             >
               {link.title}
             </button>
@@ -127,7 +131,7 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
               setIsOpen(false);
               onOpenBooking();
             }}
-            className="w-full mt-4 py-3.5 bg-amber-500 text-black font-mono font-bold text-[10px] tracking-[0.2em] uppercase text-center cursor-pointer hover:bg-yellow-400"
+            className="w-full mt-4 py-3.5 bg-[#2389DA] text-white font-mono font-bold text-[10px] tracking-[0.2em] uppercase text-center cursor-pointer hover:bg-brand-accent hover:text-black"
           >
             BOOK EVENT Care
           </button>

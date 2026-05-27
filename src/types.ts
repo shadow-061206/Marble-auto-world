@@ -43,4 +43,5 @@ export interface ReviewPhoto {
   url: string;
   caption: string;
   category: string;
+  fallbackUrl?: string;
 }

@@ -6,6 +6,12 @@
   --font-display: "Syne", "Space Grotesk", sans-serif;
   --font-serif: "Cormorant Garamond", Georgia, serif;
   --font-mono: "JetBrains Mono", monospace;
+
+  --color-brand-snow: #FCFBFB;
+  --color-brand-light: #93BAD9;
+  --color-brand-accent: #9FC8DD;
+  --color-brand-gray: #9A9EA4;
+  --color-brand-core: #2389DA;
 }
 
 /* Premium smooth scrolling behavior */
@@ -36,7 +42,7 @@ html {
 /* Custom modern range picker inputs override */
 input[type="date"]::-webkit-calendar-picker-indicator,
 input[type="time"]::-webkit-calendar-picker-indicator {
-  filter: invert(1) sepia(100%) saturate(1000%) hue-rotate(10deg);
+  filter: invert(1) sepia(100%) saturate(1000%) hue-rotate(185deg);
   cursor: pointer;
 }
 
@@ -47,8 +53,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.glass-panel-amber {
-  background: rgba(234, 179, 8, 0.02);
+.glass-panel-brand {
+  background: rgba(35, 137, 218, 0.03);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(234, 179, 8, 0.15);
+  border: 1px solid rgba(35, 137, 218, 0.15);
 }

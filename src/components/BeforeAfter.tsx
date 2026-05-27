@@ -53,8 +53,8 @@ export default function BeforeAfter() {
             }}
             className={`px-5 py-2.5 text-[10px] font-mono tracking-[0.2em] uppercase transition-all duration-300 border cursor-pointer ${
               activeItemIndex === idx
-                ? 'bg-amber-500 text-black border-amber-500 font-bold'
-                : 'bg-black text-gray-400 border-white/10 hover:text-white hover:border-white/30'
+                ? 'bg-[#2389DA] text-white border-[#2389DA] font-bold'
+                : 'bg-white text-zinc-650 border-zinc-200 hover:text-[#2389DA] hover:border-[#2389DA]/55'
             }`}
           >
             {item.title.split(' ')[0]} {item.title.split(' ')[1] || ''}
@@ -63,7 +63,7 @@ export default function BeforeAfter() {
       </div>
 
       {/* Main Interactive Comparison Stage - luxury border & clear grid feel */}
-      <div className="relative w-full max-w-4xl mx-auto border border-white/10 bg-black">
+      <div className="relative w-full max-w-4xl mx-auto border border-zinc-200 bg-white shadow-md">
         <div
           ref={containerRef}
           className="relative aspect-[16/10] md:aspect-[16/9] w-full select-none overflow-hidden cursor-ew-resize"
@@ -86,7 +86,7 @@ export default function BeforeAfter() {
               className="w-full h-full object-cover pointer-events-none"
             />
             {/* Elegant text label left bottom */}
-            <div className="absolute bottom-4 left-4 bg-black/95 border border-white/10 text-white font-mono text-[9px] tracking-[0.2em] uppercase py-1.5 px-3 z-10">
+            <div className="absolute bottom-4 left-4 bg-white/95 border border-zinc-200 text-zinc-800 font-mono text-[9px] tracking-[0.2em] uppercase py-1.5 px-3 z-10 shadow-sm font-semibold">
               BEFORE / WORN
             </div>
           </div>
@@ -105,30 +105,30 @@ export default function BeforeAfter() {
               />
             </div>
             {/* Elegant text label right bottom */}
-            <div className="absolute bottom-4 left-4 bg-amber-500 text-black font-mono text-[9px] tracking-[0.2em] uppercase py-1.5 px-3 z-10 font-bold flex items-center gap-1 shadow-md">
+            <div className="absolute bottom-4 left-4 bg-[#2389DA] text-white font-mono text-[9px] tracking-[0.2em] uppercase py-1.5 px-3 z-10 font-bold flex items-center gap-1 shadow-md">
               AFTER / PRISTINE
             </div>
           </div>
 
           {/* Separator Line with sharp handle */}
           <div
-            className="absolute inset-y-0 w-[1px] bg-amber-500 cursor-ew-resize flex items-center justify-center z-20 pointer-events-none"
+            className="absolute inset-y-0 w-[1px] bg-[#2389DA] cursor-ew-resize flex items-center justify-center z-20 pointer-events-none"
             style={{ left: `${sliderPosition}%` }}
           >
             {/* Square handle matching industrial precision look */}
-            <div className="w-9 h-9 bg-black border border-amber-500 text-amber-500 shadow-xl flex items-center justify-center cursor-pointer pointer-events-auto hover:bg-amber-500 hover:text-black transition-colors duration-300">
+            <div className="w-9 h-9 bg-white border border-[#2389DA] text-[#2389DA] shadow-xl flex items-center justify-center cursor-pointer pointer-events-auto hover:bg-[#2389DA] hover:text-white transition-colors duration-300">
               <ChevronsLeftRight className="w-4 h-4" />
             </div>
           </div>
         </div>
 
         {/* Text description underneath */}
-        <div className="p-6 bg-black border-t border-white/10 text-center">
-          <p className="text-sm font-serif italic text-white tracking-wide">
+        <div className="p-6 bg-white border-t border-zinc-200 text-center">
+          <p className="text-sm font-serif italic text-zinc-850 tracking-wide font-semibold">
             {activeItem.title} Specifications
           </p>
-          <p className="text-[11px] text-gray-400 mt-2 max-w-xl mx-auto font-mono tracking-wider leading-relaxed">
-            {activeItem.description} Drag the center slider to inspect the restorative alignment and detailing precision of Marble Auto World.
+          <p className="text-[11px] text-zinc-650 mt-2 max-w-xl mx-auto font-sans font-medium tracking-wide leading-relaxed">
+            {activeItem.description} Drag the center slider to inspect the restorative alignment and detailing precision of Auto World.
           </p>
         </div>
       </div>

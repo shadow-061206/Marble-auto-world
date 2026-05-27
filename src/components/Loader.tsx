@@ -34,34 +34,34 @@ export default function Loader() {
       }`}
     >
       {/* Visual background atmospheric elements */}
-      <div className="absolute top-[20%] w-[300px] h-[300px] bg-yellow-500/10 rounded-full blur-[100px] animate-pulse pointer-events-none" />
+      <div className="absolute top-[20%] w-[300px] h-[300px] bg-brand-core/15 rounded-full blur-[100px] animate-pulse pointer-events-none" />
 
       {/* Elegant minimalist rotating geometry */}
       <div className="relative mb-8 flex items-center justify-center">
         {/* Outer glowing chassis outline effect */}
-        <div className="absolute w-24 h-24 border border-yellow-500/20 rounded-full animate-ping duration-1000" />
-        <div className="absolute w-20 h-20 border-t-2 border-yellow-500/80 rounded-full animate-spin duration-700" />
+        <div className="absolute w-24 h-24 border border-brand-core/30 rounded-full animate-ping duration-1000" />
+        <div className="absolute w-20 h-20 border-t-2 border-brand-accent rounded-full animate-spin duration-700" />
         
         {/* Core Icon */}
         <div className="relative w-14 h-14 bg-[#0e0e12] rounded-full border border-white/10 flex items-center justify-center shadow-lg">
-          <ShieldCheck className="w-6 h-6 text-yellow-500 animate-pulse" />
+          <ShieldCheck className="w-6 h-6 text-brand-accent animate-pulse" />
         </div>
       </div>
 
       {/* Brand Branding Typography */}
       <div className="text-center space-y-2 px-6">
         <h1 className="text-3xl md:text-4xl font-display font-medium tracking-widest text-white uppercase">
-          MARBLE <span className="text-yellow-500">AUTO</span> WORLD
+          AUTO <span className="text-brand-accent">WORLD</span>
         </h1>
         <p className="text-xs font-mono text-gray-500 tracking-[0.25em] uppercase flex items-center justify-center gap-1.5">
-          <Sparkles className="w-3 h-3 text-yellow-500 animate-pulse" /> BY MAMTA ENTERPRISES <Sparkles className="w-3 h-3 text-yellow-500 animate-pulse" />
+          <Sparkles className="w-3 h-3 text-brand-accent animate-pulse" /> BY MAMTA ENTERPRISES <Sparkles className="w-3 h-3 text-brand-accent animate-pulse" />
         </p>
       </div>
 
       {/* Horizontal Progress Bar */}
       <div className="mt-12 w-64 h-[2px] bg-white/5 rounded-full overflow-hidden relative">
         <div
-          className="h-full bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-500 transition-all duration-150 ease-out"
+          className="h-full bg-gradient-to-r from-brand-core via-brand-light to-brand-accent transition-all duration-150 ease-out"
           style={{ width: `${progress}%` }}
         />
       </div>
@@ -74,7 +74,7 @@ export default function Loader() {
           {progress >= 75 && progress < 99 && 'POLISHING SHADOW MAP RENDERING FILES...'}
           {progress >= 99 && 'SUCCESSFULLY BALANCED...'}
         </span>
-        <span className="text-[10px] font-mono text-yellow-500/90 ml-1.5 font-bold">
+        <span className="text-[10px] font-mono text-brand-accent/90 ml-1.5 font-bold">
           {progress}%
         </span>
       </div>

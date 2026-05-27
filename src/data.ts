@@ -1,13 +1,17 @@
 import { Service, Testimonial, GalleryItem, ReviewPhoto } from './types';
 
-import imgLineup from './assets/images/workshop_cars_lineup_1779295705536.png';
-import imgAudiBooth from './assets/images/blue_audi_paint_booth_1779295724762.png';
-import imgJazzLift from './assets/images/honda_jazz_hydraulic_lift_1779295743337.png';
-import imgSuvWorkshop from './assets/images/white_suv_workshop_area_1779295759282.png';
-import imgLandRover from './assets/images/white_land_rover_discovery_1779295773821.png';
-import imgBrioBooth from './assets/images/honda_brio_ats_elgi_1779295795660.png';
-import imgSilverWash from './assets/images/silver_car_washing_bay_1779295813776.png';
-import imgMechanicDiag from './assets/images/mechanic_engine_diagnostic_1779295829294.png';
+import imgWorkshop1 from './assets/images/IMG20260522190406.jpg'; // Interior Assembly & Diagnostic Bay
+import imgWorkshop2 from './assets/images/IMG20260522190515.jpg'; // Active General Service Lift
+import imgWorkshop3 from './assets/images/IMG20260522190118.jpg'; // Fender Calibration Lift
+import imgWorkshop4 from './assets/images/IMG20260522190141.jpg'; // SUV PPF Installation
+import imgWorkshop5 from './assets/images/IMG20260522190034.jpg'; // Workshop Entry
+import imgWorkshop6 from './assets/images/IMG20260522190016.jpg';
+import imgWorkshop7 from './assets/images/IMG20260522190156.jpg';
+import imgWorkshop8 from './assets/images/IMG20260522190214.jpg';
+import imgWorkshop9 from './assets/images/IMG20260522190253.jpg';
+import imgWorkshop10 from './assets/images/IMG20260522190340.jpg';
+import imgWorkshop11 from './assets/images/IMG20260522190355.jpg';
+import whatsappImg1 from './assets/images/WhatsApp Image 2026-05-23 at 8.48.34 AM.jpeg'; // Newly Uploaded Lift Bay Picture
 
 import before1 from './assets/images/before1.jpg';
 import after1 from './assets/images/After1.jpg';
@@ -160,63 +164,108 @@ export const TESTIMONIALS: Testimonial[] = [
 export const WORKSHOP_REVIEWS_PHOTOS: ReviewPhoto[] = [
   {
     id: 'wp1',
-    url: imgLineup,
-    caption: 'General service and assembly bays inside Mamta Enterprises\'s main workshop shelter with high clearance.',
-    category: 'Workshop Layout'
+    url: imgWorkshop5,
+    caption: 'Official interior assembly and heavy diagnostic bay layout at Marble Auto World opposite Mamta Enterprises.',
+    category: 'Workshop Layout',
+    fallbackUrl: imgWorkshop5
   },
   {
     id: 'wp2',
-    url: imgAudiBooth,
-    caption: 'Bespoke gloss finish inspection on a custom Royal Blue Audi Q5 inside our high-tech spray booth.',
-    category: 'Detailing & Polish'
+    url: whatsappImg1,
+    caption: 'Active general service station showing our hydraulic car lifts and mechanical tools floor.',
+    category: 'Mechanical Service',
+    fallbackUrl: whatsappImg1
   },
   {
     id: 'wp3',
-    url: imgAudiBooth,
-    caption: 'Immaculate specular mirror reflections on a custom Audi Q5 after nanotech ceramic glaze layers.',
-    category: 'Ceramic Shield'
+    url: imgWorkshop3,
+    caption: 'Fender calibration & drivetrain check on an advanced hydraulic 2-post elevator.',
+    category: 'Detailing Studio',
+    fallbackUrl: imgWorkshop3
   },
   {
     id: 'wp4',
-    url: imgJazzLift,
-    caption: 'Fender calibration & drivetrain check on an advanced hydraulic 2-post elevator.',
-    category: 'Mechanical Lift'
+    url: imgWorkshop4,
+    caption: 'Luxury offroad and corporate SUVs receiving complete PPF Matte self-healing shield applications.',
+    category: 'PPF Installation',
+    fallbackUrl: imgWorkshop4
   },
   {
     id: 'wp5',
-    url: imgSuvWorkshop,
-    caption: 'Luxury offroad and corporate SUVs receiving complete PPF Matte self-healing shield applications.',
-    category: 'SUV Alignment & Space'
+    url: imgWorkshop6,
+    caption: 'Front bumper fitment and high-precision body contour alignment in progress.',
+    category: 'Bodywork',
+    fallbackUrl: imgWorkshop6
   },
   {
     id: 'wp6',
-    url: imgBrioBooth,
-    caption: 'ATS ELGI computerized and pressurized thermal baking enclosure for immaculate color matching.',
-    category: 'Denting & Oven Paint'
+    url: imgWorkshop7,
+    caption: 'General chassis safety inspections and fluid condition testing inside the active workshop.',
+    category: 'Fluid Check',
+    fallbackUrl: imgWorkshop7
   },
   {
     id: 'wp7',
-    url: imgSilverWash,
-    caption: 'Pressure water washing and underbody snow foam cleaning in progress for deep decontamination.',
-    category: 'Premium Car Wash'
+    url: imgWorkshop1,
+    caption: 'Our Workshop Entry Point.',
+    category: 'Heavy Lift',
+    fallbackUrl: imgWorkshop1
   },
   {
     id: 'wp8',
-    url: imgMechanicDiag,
-    caption: 'Heavy maintenance overhaul and module scanner inspection conducted directly by certificated technicians.',
-    category: 'Diagnostic Care'
+    url: imgWorkshop8,
+    caption: 'Specular nano-ceramic paint gloss detailing and finish verification.',
+    category: 'Nano-Glaze',
+    fallbackUrl: imgWorkshop8
   },
   {
     id: 'wp9',
-    url: imgLandRover,
-    caption: 'Premium White Land Rover Discovery ready for delivery following a completed 9H protective coating service.',
-    category: 'Executive Class Delivery'
+    url: imgWorkshop9,
+    caption: 'Diagnostic module scanners tracking engine sensor readings in real-time.',
+    category: 'ECU Calibration',
+    fallbackUrl: imgWorkshop9
   },
   {
     id: 'wp10',
-    url: imgMechanicDiag,
-    caption: 'Direct diagnostics on high-precision engine manifolds and sensors for stable performance.',
-    category: 'ECU Calibration & Check'
+    url: imgWorkshop10,
+    caption: 'Pressurized clean-air spray booth ensuring pure paint application matches.',
+    category: 'Paint Booth',
+    fallbackUrl: imgWorkshop10
+  },
+  {
+    id: 'wp11',
+    url: imgWorkshop11,
+    caption: 'Computerized telemetry dashboards providing accurate power-delivery indicators.',
+    category: 'Engine Overhaul',
+    fallbackUrl: imgWorkshop11
+  },
+  {
+    id: 'wp12',
+    url: imgWorkshop4,
+    caption: 'Thermal baking chamber drying polyurethane sealants and finishes.',
+    category: 'Thermal Baking',
+    fallbackUrl: imgWorkshop4
+  },
+  {
+    id: 'wp13',
+    url: imgWorkshop1,
+    caption: 'Precision suspension re-bushing and steering wheel alignment diagnostics.',
+    category: 'Alignment Bay',
+    fallbackUrl: imgWorkshop1
+  },
+  {
+    id: 'wp14',
+    url: imgWorkshop2,
+    caption: 'Handover exterior gloss evaluation and detailing inspection.',
+    category: 'Premium Detailing',
+    fallbackUrl: imgWorkshop2
+  },
+  {
+    id: 'wp15',
+    url: imgWorkshop3,
+    caption: 'Tire safety tread-depth inspection and air pressure balancing.',
+    category: 'Tire & Brake Service',
+    fallbackUrl: imgWorkshop3
   }
 ];
 
