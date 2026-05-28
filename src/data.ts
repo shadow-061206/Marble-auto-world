@@ -11,6 +11,10 @@ import imgWorkshop8 from './assets/images/IMG20260522190214.jpg';
 import imgWorkshop9 from './assets/images/IMG20260522190253.jpg';
 import imgWorkshop10 from './assets/images/IMG20260522190340.jpg';
 import imgWorkshop11 from './assets/images/IMG20260522190355.jpg';
+import imgWorkshop12 from './assets/images/IMG20260527122113.jpg.jpg';
+import imgWorkshop13 from './assets/images/IMG20260527122126.jpg.jpg';
+import imgWorkshop14 from './assets/images/IMG20260527121949.jpg.jpg';
+import imgWorkshop15 from './assets/images/IMG20260527121937.jpg.jpg';
 import whatsappImg1 from './assets/images/WhatsApp Image 2026-05-23 at 8.48.34 AM.jpeg'; // Newly Uploaded Lift Bay Picture
 
 import before1 from './assets/images/before1.jpg';
@@ -241,31 +245,31 @@ export const WORKSHOP_REVIEWS_PHOTOS: ReviewPhoto[] = [
   },
   {
     id: 'wp12',
-    url: imgWorkshop4,
+    url: imgWorkshop12,
     caption: 'Thermal baking chamber drying polyurethane sealants and finishes.',
     category: 'Thermal Baking',
-    fallbackUrl: imgWorkshop4
+    fallbackUrl: imgWorkshop12
   },
   {
     id: 'wp13',
-    url: imgWorkshop1,
+    url: imgWorkshop13,
     caption: 'Precision suspension re-bushing and steering wheel alignment diagnostics.',
     category: 'Alignment Bay',
-    fallbackUrl: imgWorkshop1
+    fallbackUrl: imgWorkshop13
   },
   {
     id: 'wp14',
-    url: imgWorkshop2,
+    url: imgWorkshop14,
     caption: 'Handover exterior gloss evaluation and detailing inspection.',
     category: 'Premium Detailing',
-    fallbackUrl: imgWorkshop2
+    fallbackUrl: imgWorkshop14
   },
   {
     id: 'wp15',
-    url: imgWorkshop3,
+    url: imgWorkshop15,
     caption: 'Tire safety tread-depth inspection and air pressure balancing.',
     category: 'Tire & Brake Service',
-    fallbackUrl: imgWorkshop3
+    fallbackUrl: imgWorkshop15
   }
 ];
 
