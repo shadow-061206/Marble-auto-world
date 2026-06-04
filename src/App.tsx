@@ -111,17 +111,17 @@ export default function App() {
               {/* Premium Tag */}
               <div className="inline-flex items-center gap-2 border-b border-[#2389DA]/30 pb-1 text-[10px] font-mono uppercase tracking-[0.3em] text-[#2389DA] font-bold">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#2389DA] inline-block animate-pulse" />
-                AUTO WORLD AUTOMOTIVE SANCTUARY
+                MARBLE AUTO WORLD AUTOMOTIVE SANCTUARY
               </div>
 
                {/* Outstanding Brand Title */}
               <div className="space-y-4">
                 
                 <div className="flex flex-col gap-1 tracking-tight select-none font-sans font-bold">
-                  {/* Top row: AUTO + By Mamta Enterprises */}
+                  {/* Top row: MARBLE + By Mamta Enterprises */}
                   <div className="flex flex-wrap items-baseline gap-x-4 md:gap-x-6 gap-y-2">
                     <span className="text-3xl sm:text-4xl lg:text-[38px] xl:text-[47px] font-black text-zinc-900 tracking-[0.02em] uppercase leading-none">
-                      AUTO
+                      MARBLE
                     </span>
                     
                     <span className="text-zinc-600 font-sans font-semibold text-xs sm:text-sm md:text-lg tracking-wide leading-none">
@@ -129,9 +129,9 @@ export default function App() {
                     </span>
                   </div>
 
-                  {/* Bottom row: WORLD */}
-                  <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[75px] xl:text-[100px] 2xl:text-[121px] font-black text-[#2389DA] tracking-tight uppercase leading-none whitespace-nowrap mt-1">
-                    WORLD
+                  {/* Bottom row: AUTO WORLD */}
+                  <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-[70px] xl:text-[90px] 2xl:text-[105px] font-black text-[#2389DA] tracking-tight uppercase leading-none whitespace-nowrap mt-1">
+                    AUTO WORLD
                   </h1>
                 </div>
               </div>
@@ -140,7 +140,7 @@ export default function App() {
               <div className="space-y-4 text-xs md:text-sm text-zinc-650 font-medium leading-relaxed max-w-xl">
                 <p>
                   Established as the premium complete car care center, 
-                  <strong> Auto World</strong> has become synonymous with mechanical authority and luxury automotive detailing. 
+                  <strong> Marble Auto World</strong> has become synonymous with mechanical authority and luxury automotive detailing. 
                   Operated with standard procedures and utilizing state-of-the-art diagnostic frameworks, 
                   we cater to detailing enthusiasts, offroad collectors, and daily commuter vehicles alike.
                 </p>
@@ -256,7 +256,7 @@ export default function App() {
       <section className="py-24 border-t border-b border-zinc-200 bg-white text-center relative z-10 shadow-sm">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
           <p className="text-xs font-mono text-zinc-400 tracking-[0.4em] uppercase mb-4">
-            AUTO WORLD CRAFT RULES
+            MARBLE AUTO WORLD CRAFT RULES
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif italic text-zinc-900 tracking-wide">
             "Built by enthusiasts, <span className="text-[#2389DA]">for enthusiasts."</span>
@@ -274,7 +274,7 @@ export default function App() {
               PRISTINE OPERATION STANDARDS
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-light text-zinc-900 tracking-tight uppercase leading-none">
-              WHY CHOOSE <span className="font-serif italic font-light text-[#2389DA]">Auto World</span>
+              WHY CHOOSE <span className="font-serif italic font-light text-[#2389DA]">Marble Auto World</span>
             </h2>
             <div className="w-12 h-[1px] bg-[#2389DA] mt-4" />
             <p className="text-xs md:text-sm text-zinc-655 leading-relaxed font-medium max-w-xl">
@@ -649,13 +649,13 @@ export default function App() {
             <div className="lg:col-span-5 border border-zinc-200 bg-white p-8 flex flex-col justify-between space-y-12 shadow-sm">
               
               <div className="space-y-8">
-                <div className="flex flex-col gap-0.5 select-none text-left">
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-xl font-black text-zinc-900 uppercase tracking-tight">AUTO</span>
+                <div className="flex flex-col gap-0.5 select-none text-left font-sans font-bold">
+                  <div className="flex items-baseline gap-2 leading-none">
+                    <span className="text-sm font-black text-zinc-900 uppercase tracking-tight">MARBLE</span>
                     <span className="text-zinc-550 font-sans font-semibold text-xs">By Mamta Enterprises</span>
                   </div>
                   <h3 className="text-3xl font-black text-[#2389DA] uppercase tracking-tight leading-none mt-1">
-                    WORLD
+                    AUTO WORLD
                   </h3>
                 </div>
 
@@ -780,13 +780,13 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8 border-b border-zinc-200 pb-12 mb-12">
             
             <div className="text-left space-y-2">
-              <div className="flex flex-col gap-0.5 select-none">
-                <div className="flex items-baseline gap-2">
-                  <span className="text-md font-black text-zinc-900 uppercase tracking-tight">AUTO</span>
+              <div className="flex flex-col gap-0.5 select-none font-sans font-bold">
+                <div className="flex items-baseline gap-2 leading-none">
+                  <span className="text-xs font-black text-zinc-900 uppercase tracking-tight">MARBLE</span>
                   <span className="text-zinc-550 font-sans font-semibold text-[10px]">By Mamta Enterprises</span>
                 </div>
-                <span className="text-lg font-black text-[#2389DA] uppercase tracking-tight leading-none">
-                  WORLD
+                <span className="text-sm font-black text-[#2389DA] uppercase tracking-tight leading-none">
+                  AUTO WORLD
                 </span>
               </div>
               <p className="text-[9px] font-mono uppercase tracking-[0.3em] text-zinc-400">

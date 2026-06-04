@@ -56,15 +56,15 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
             className="flex flex-col items-start cursor-pointer select-none group"
           >
             <div className="flex items-baseline gap-1.5 leading-none">
-              <span className="text-sm font-black text-zinc-900 uppercase tracking-tight transition-colors group-hover:text-[#2389DA]">
-                AUTO
+              <span className="text-xs font-black text-zinc-500 uppercase tracking-[0.15em] transition-colors group-hover:text-[#2389DA]">
+                MARBLE
               </span>
-              <span className="text-zinc-500 font-sans text-[8px] font-medium tracking-wide">
+              <span className="text-zinc-400 font-sans text-[8px] font-medium tracking-wide">
                 By Mamta Enterprises
               </span>
             </div>
-            <span className="text-lg font-black text-[#9FC8DD] uppercase tracking-tight leading-none">
-              WORLD
+            <span className="text-base font-black text-[#2389DA] uppercase tracking-tight leading-none transition-colors group-hover:text-zinc-900 mt-1">
+              AUTO WORLD
             </span>
           </div>
 

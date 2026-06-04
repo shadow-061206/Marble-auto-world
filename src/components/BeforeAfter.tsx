@@ -127,8 +127,8 @@ export default function BeforeAfter() {
           <p className="text-sm font-serif italic text-zinc-850 tracking-wide font-semibold">
             {activeItem.title} Specifications
           </p>
-          <p className="text-[11px] text-zinc-650 mt-2 max-w-xl mx-auto font-sans font-medium tracking-wide leading-relaxed">
-            {activeItem.description} Drag the center slider to inspect the restorative alignment and detailing precision of Auto World.
+          <p className="text-[11px] text-zinc-655 mt-2 max-w-xl mx-auto font-sans font-medium tracking-wide leading-relaxed">
+            {activeItem.description} Drag the center slider to inspect the restorative alignment and detailing precision of Marble Auto World.
           </p>
         </div>
       </div>
